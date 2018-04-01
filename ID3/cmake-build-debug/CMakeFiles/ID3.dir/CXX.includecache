@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/squarefong/Documents/PatternRecgnitionPractice/ID3/ID3.cpp
+ID3.h
+/home/squarefong/Documents/PatternRecgnitionPractice/ID3/ID3.h
+
+/home/squarefong/Documents/PatternRecgnitionPractice/ID3/ID3.h
+
+/home/squarefong/Documents/PatternRecgnitionPractice/ID3/loadData.h
+vector
+-
+string
+-
+set
+-
+fstream
+-
+cstring
+-
+
+/home/squarefong/Documents/PatternRecgnitionPractice/ID3/main.cpp
+iostream
+-
+loadData.h
+/home/squarefong/Documents/PatternRecgnitionPractice/ID3/loadData.h
+

@@ -23,7 +23,7 @@ public:
     Instance(const vector<string> & AttributionsValue){
         attributionsValue = AttributionsValue;
     }
-    string operator[](const int &rhs){
+    string operator[](const int &rhs)const{
         if(rhs>=attributionsValue.size())
             return "";
         return attributionsValue[rhs];
@@ -36,6 +36,7 @@ class Instances{
     vector<set<string>> attributions;
     vector<string> attributionsName;
 public:
+    Instances(){}
     Instances(const vector<set<string>> &Attributions, const vector<string> &AttributionsName){
         attributions = Attributions;
         attributionsName = AttributionsName;
@@ -43,13 +44,38 @@ public:
     void push_back(const Instance& data){
         dataSets.push_back(data);
     }
-    Instance operator[](const int &rhs){
+    Instance operator[](const int &rhs)const{
         if(rhs >= dataSets.size())
             exit(1);
         return dataSets[rhs];
     }
+
+    friend ostream &operator << (ostream & ost,const Instances&rhs){
+        for(int i=0; i<rhs.attributionsName.size(); ++i){
+            cout << "@attribute " << rhs.attributionsName[i] << " {";
+            auto it = rhs.attributions[i].begin();
+            cout << (*it);
+            ++it;
+            while(it != rhs.attributions[i].end()){
+                cout << ',' << (*it);
+                ++it;
+            }
+            cout << "}\n";
+        }
+        cout << endl << "@data\n";
+        for(int i=0; i<rhs.dataSets.size(); ++i){
+            cout << rhs.dataSets[i][0];
+            for(int j=1; j<rhs.attributions.size(); ++j){
+                cout << "," << rhs.dataSets[i][j];
+            }
+            cout << endl;
+        }
+
+        return ost;
+    }
 };
 class DataLoader{
+public:
     static bool ArffReader(const string &filePath, Instances &instances){
         ifstream ifstream1(filePath);
         char singleLine[256];
