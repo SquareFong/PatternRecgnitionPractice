@@ -11,6 +11,12 @@ ID3.h
 /home/squarefong/Documents/PatternRecgnitionPractice/ID3/ID3.h
 
 /home/squarefong/Documents/PatternRecgnitionPractice/ID3/ID3.h
+loadData.h
+/home/squarefong/Documents/PatternRecgnitionPractice/ID3/loadData.h
+map
+-
+cmath
+-
 
 /home/squarefong/Documents/PatternRecgnitionPractice/ID3/loadData.h
 vector
@@ -23,10 +29,14 @@ fstream
 -
 cstring
 -
+iostream
+-
 
 /home/squarefong/Documents/PatternRecgnitionPractice/ID3/main.cpp
 iostream
 -
 loadData.h
 /home/squarefong/Documents/PatternRecgnitionPractice/ID3/loadData.h
+ID3.h
+/home/squarefong/Documents/PatternRecgnitionPractice/ID3/ID3.h
 

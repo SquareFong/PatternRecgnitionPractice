@@ -3,7 +3,9 @@
 
 CMakeFiles/ID3.dir/ID3.cpp.o: ../ID3.cpp
 CMakeFiles/ID3.dir/ID3.cpp.o: ../ID3.h
+CMakeFiles/ID3.dir/ID3.cpp.o: ../loadData.h
 
+CMakeFiles/ID3.dir/main.cpp.o: ../ID3.h
 CMakeFiles/ID3.dir/main.cpp.o: ../loadData.h
 CMakeFiles/ID3.dir/main.cpp.o: ../main.cpp
 

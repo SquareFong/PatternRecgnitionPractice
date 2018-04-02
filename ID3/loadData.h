@@ -10,6 +10,7 @@
 #include <set>
 #include <fstream>
 #include <cstring>
+#include <iostream>
 using namespace std;
 
 class Instance{
@@ -33,7 +34,9 @@ public:
 
 class Instances{
     vector<Instance> dataSets;
+    //属性值集合
     vector<set<string>> attributions;
+    //属性名称
     vector<string> attributionsName;
 public:
     Instances(){}
@@ -41,13 +44,41 @@ public:
         attributions = Attributions;
         attributionsName = AttributionsName;
     }
+
     void push_back(const Instance& data){
         dataSets.push_back(data);
     }
+
     Instance operator[](const int &rhs)const{
         if(rhs >= dataSets.size())
             exit(1);
         return dataSets[rhs];
+    }
+
+    set<string> getAttributions(int sub){
+        return attributions[sub];
+    }
+
+    int getAttributionsSub(const string& Attribut){
+        for(unsigned i=0; i<attributionsName.size(); ++i){
+            if(attributionsName[i] == Attribut)
+                return i;
+        }
+        return -1;
+    }
+
+    string getAttributionName(unsigned sub){
+        if(sub < attributionsName.size())
+            return attributionsName[sub];
+        return "";
+    }
+
+    unsigned long attributionSize(){
+        return attributionsName.size();
+    }
+
+    unsigned long size(){
+        return dataSets.size();
     }
 
     friend ostream &operator << (ostream & ost,const Instances&rhs){
