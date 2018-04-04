@@ -59,6 +59,10 @@ public:
         return attributions[sub];
     }
 
+    set<string> getAttributions(string Name){
+        return attributions[getAttributionsSub(Name)];
+    }
+
     int getAttributionsSub(const string& Attribut){
         for(unsigned i=0; i<attributionsName.size(); ++i){
             if(attributionsName[i] == Attribut)
