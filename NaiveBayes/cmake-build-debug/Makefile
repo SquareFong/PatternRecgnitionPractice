@@ -123,6 +123,33 @@ NaiveBayes/fast:
 	$(MAKE) -f CMakeFiles/NaiveBayes.dir/build.make CMakeFiles/NaiveBayes.dir/build
 .PHONY : NaiveBayes/fast
 
+NaiveBayes.o: NaiveBayes.cpp.o
+
+.PHONY : NaiveBayes.o
+
+# target to build an object file
+NaiveBayes.cpp.o:
+	$(MAKE) -f CMakeFiles/NaiveBayes.dir/build.make CMakeFiles/NaiveBayes.dir/NaiveBayes.cpp.o
+.PHONY : NaiveBayes.cpp.o
+
+NaiveBayes.i: NaiveBayes.cpp.i
+
+.PHONY : NaiveBayes.i
+
+# target to preprocess a source file
+NaiveBayes.cpp.i:
+	$(MAKE) -f CMakeFiles/NaiveBayes.dir/build.make CMakeFiles/NaiveBayes.dir/NaiveBayes.cpp.i
+.PHONY : NaiveBayes.cpp.i
+
+NaiveBayes.s: NaiveBayes.cpp.s
+
+.PHONY : NaiveBayes.s
+
+# target to generate assembly for a file
+NaiveBayes.cpp.s:
+	$(MAKE) -f CMakeFiles/NaiveBayes.dir/build.make CMakeFiles/NaiveBayes.dir/NaiveBayes.cpp.s
+.PHONY : NaiveBayes.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... NaiveBayes"
+	@echo "... NaiveBayes.o"
+	@echo "... NaiveBayes.i"
+	@echo "... NaiveBayes.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

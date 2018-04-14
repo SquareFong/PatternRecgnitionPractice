@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/squarefong/Documents/PatternRecgnitionPractice/NaiveBayes/NaiveBayes.cpp" "/home/squarefong/Documents/PatternRecgnitionPractice/NaiveBayes/cmake-build-debug/CMakeFiles/NaiveBayes.dir/NaiveBayes.cpp.o"
   "/home/squarefong/Documents/PatternRecgnitionPractice/NaiveBayes/main.cpp" "/home/squarefong/Documents/PatternRecgnitionPractice/NaiveBayes/cmake-build-debug/CMakeFiles/NaiveBayes.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

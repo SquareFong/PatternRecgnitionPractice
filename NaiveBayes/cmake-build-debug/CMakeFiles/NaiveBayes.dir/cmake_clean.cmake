@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/NaiveBayes.dir/main.cpp.o"
+  "CMakeFiles/NaiveBayes.dir/NaiveBayes.cpp.o"
   "NaiveBayes.pdb"
   "NaiveBayes"
 )

@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/squarefong/Documents/PatternRecgnitionPractice/NaiveBayes/NaiveBayes.cpp">
+			<Option target="NaiveBayes"/>
+		</Unit>
+		<Unit filename="/home/squarefong/Documents/PatternRecgnitionPractice/NaiveBayes/NaiveBayes.h">
+			<Option target="NaiveBayes"/>
+		</Unit>
 		<Unit filename="/home/squarefong/Documents/PatternRecgnitionPractice/NaiveBayes/loadData.h">
 			<Option target="NaiveBayes"/>
 		</Unit>

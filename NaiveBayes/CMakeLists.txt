@@ -3,4 +3,4 @@ project(NaiveBayes)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(NaiveBayes main.cpp loadData.h)
+add_executable(NaiveBayes main.cpp loadData.h NaiveBayes.cpp NaiveBayes.h)

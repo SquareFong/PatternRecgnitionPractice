@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/NaiveBayes.dir/main.cpp.o  -o NaiveBayes 
+/usr/bin/c++  -g   CMakeFiles/NaiveBayes.dir/main.cpp.o CMakeFiles/NaiveBayes.dir/NaiveBayes.cpp.o  -o NaiveBayes 
