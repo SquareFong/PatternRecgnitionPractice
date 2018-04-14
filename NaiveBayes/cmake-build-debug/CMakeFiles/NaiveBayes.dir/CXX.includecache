@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/squarefong/Documents/PatternRecgnitionPractice/NaiveBayes/NaiveBayes.cpp
+NaiveBayes.h
+/home/squarefong/Documents/PatternRecgnitionPractice/NaiveBayes/NaiveBayes.h
+
+/home/squarefong/Documents/PatternRecgnitionPractice/NaiveBayes/NaiveBayes.h
+map
+-
+iomanip
+-
+loadData.h
+/home/squarefong/Documents/PatternRecgnitionPractice/NaiveBayes/loadData.h
+
+/home/squarefong/Documents/PatternRecgnitionPractice/NaiveBayes/loadData.h
+vector
+-
+string
+-
+set
+-
+fstream
+-
+cstring
+-
+iostream
+-
+
+/home/squarefong/Documents/PatternRecgnitionPractice/NaiveBayes/main.cpp
+iostream
+-
+loadData.h
+/home/squarefong/Documents/PatternRecgnitionPractice/NaiveBayes/loadData.h
+NaiveBayes.h
+/home/squarefong/Documents/PatternRecgnitionPractice/NaiveBayes/NaiveBayes.h
+
