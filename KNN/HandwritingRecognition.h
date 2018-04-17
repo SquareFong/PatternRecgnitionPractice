@@ -1,0 +1,8 @@
+//
+// Created by squarefong on 18-4-17.
+//
+
+#ifndef KNN_HANDWRITINGRECOGNITION_H
+#define KNN_HANDWRITINGRECOGNITION_H
+
+#endif //KNN_HANDWRITINGRECOGNITION_H

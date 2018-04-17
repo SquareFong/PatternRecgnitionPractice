@@ -3,4 +3,4 @@ project(KNN)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(KNN main.cpp)
+add_executable(KNN main.cpp HandwritingRecognition.h)

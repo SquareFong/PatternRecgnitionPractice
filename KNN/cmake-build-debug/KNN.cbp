@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/squarefong/Documents/PatternRecgnitionPractice/KNN/HandwritingRecognition.h">
+			<Option target="KNN"/>
+		</Unit>
 		<Unit filename="/home/squarefong/Documents/PatternRecgnitionPractice/KNN/main.cpp">
 			<Option target="KNN"/>
 		</Unit>
