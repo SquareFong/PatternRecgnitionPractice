@@ -1,0 +1,3 @@
+/home/squarefong/Documents/PatternRecgnitionPractice/KNN/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/squarefong/Documents/PatternRecgnitionPractice/KNN/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/squarefong/Documents/PatternRecgnitionPractice/KNN/cmake-build-debug/CMakeFiles/KNN.dir

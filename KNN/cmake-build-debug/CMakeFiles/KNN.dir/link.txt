@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/KNN.dir/main.cpp.o  -o KNN 
