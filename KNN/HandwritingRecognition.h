@@ -8,6 +8,7 @@
 #include <fstream>
 #include <vector>
 #include <string>
+#include <set>
 #include <dirent.h>
 #include <algorithm>
 using namespace std;
@@ -56,14 +57,37 @@ vector<vector<int>> loadData(string directory){
     return data;
 }
 
-int distance(const vector<int> &lhs, const vector<int> &rhs){
+unsigned distance(const vector<int> &lhs, const vector<int> &rhs){
+    unsigned d = 0;
     if(lhs.size() != rhs.size())
-        return -1;
-    int d = 0;
+        return d-1;
     for(int i(0); i<rhs.size(); ++i){
         d += (lhs[i] - rhs[i]) * (lhs[i] - rhs[i]);
     }
     return d;
+}
+
+set<int> judge(const vector<int> &test, const vector<vector<int>> &trainings, int k){
+    vector<unsigned > distances(trainings.size(), 0);
+    for (int i = 0; i < distances.size(); ++i){
+        distances[i] = distance(test, trainings[i]);
+    }
+    set<int> KNNSub;
+    while (k--) {
+        unsigned minDistance(0);
+        int minSub(0);
+        --minDistance;
+        for(int i=0; i < distances.size(); ++i){
+            if(distances[i] < minDistance){
+                minDistance = distances[i];
+                minSub = i;
+            }
+        }
+        KNNSub.insert(minSub);
+        unsigned temp(0);
+        distances[minSub] = --temp;
+    }
+    return KNNSub;
 }
 
 
