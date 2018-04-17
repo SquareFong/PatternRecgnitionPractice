@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/squarefong/Documents/PatternRecgnitionPractice/KNN/HandwritingRecognition.h
+fstream
+-
+vector
+-
+string
+-
+dirent.h
+-
+algorithm
+-
+
+/home/squarefong/Documents/PatternRecgnitionPractice/KNN/main.cpp
+iostream
+-
+HandwritingRecognition.h
+/home/squarefong/Documents/PatternRecgnitionPractice/KNN/HandwritingRecognition.h
+
