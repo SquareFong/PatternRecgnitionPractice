@@ -1,11 +1,14 @@
 #include <iostream>
 #include "HandwritingRecognition.h"
 
+string trainingDirectory("/home/squarefong/Documents/PatternRecgnitionPractice/KNN/trainingDigits");
+string testDirectory("/home/squarefong/Documents/PatternRecgnitionPractice/KNN/testDigits");
+
 int main() {
-    vector<string> trainingFiles = getFiles("/home/squarefong/Documents/PatternRecgnitionPractice/KNN/trainingDigits");
-    vector<vector<int>> trainingSet = loadData("/home/squarefong/Documents/PatternRecgnitionPractice/KNN/trainingDigits");
-    vector<string> testFiles = getFiles("/home/squarefong/Documents/PatternRecgnitionPractice/KNN/testDigits");
-    vector<vector<int>> testSet = loadData("/home/squarefong/Documents/PatternRecgnitionPractice/KNN/testDigits");
+    vector<string> trainingFiles = getFiles(trainingDirectory);
+    vector<vector<int>> trainingSet = loadData(trainingDirectory);
+    vector<string> testFiles = getFiles(testDirectory);
+    vector<vector<int>> testSet = loadData(testDirectory);
 
     double errorCounter = 0.0;
     for(int i=0; i<testFiles.size(); ++i){
@@ -27,6 +30,6 @@ int main() {
     }
 
     cout << "错误率：" << errorCounter/testFiles.size() << endl;
-    std::cout << "Hello, World!" << std::endl;
+
     return 0;
 }
