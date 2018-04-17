@@ -56,4 +56,15 @@ vector<vector<int>> loadData(string directory){
     return data;
 }
 
+int distance(const vector<int> &lhs, const vector<int> &rhs){
+    if(lhs.size() != rhs.size())
+        return -1;
+    int d = 0;
+    for(int i(0); i<rhs.size(); ++i){
+        d += (lhs[i] - rhs[i]) * (lhs[i] - rhs[i]);
+    }
+    return d;
+}
+
+
 #endif //KNN_HANDWRITINGRECOGNITION_H
