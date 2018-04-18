@@ -85,6 +85,9 @@
 		<Unit filename="/home/squarefong/Documents/PatternRecgnitionPractice/MachineLearning/main.cpp">
 			<Option target="MachineLearning"/>
 		</Unit>
+		<Unit filename="/home/squarefong/Documents/PatternRecgnitionPractice/MachineLearning/neuralNetwork.h">
+			<Option target="MachineLearning"/>
+		</Unit>
 		<Unit filename="/home/squarefong/Documents/PatternRecgnitionPractice/MachineLearning/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
