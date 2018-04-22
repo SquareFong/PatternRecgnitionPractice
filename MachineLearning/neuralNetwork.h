@@ -10,7 +10,7 @@
 #include <cmath>
 using namespace std;
 //自然常数（Natural constant）
-const double e=2.71828182845904523536
+const double e=2.71828182845904523536;
 
 class ArtificialNeuron{
     //权重
