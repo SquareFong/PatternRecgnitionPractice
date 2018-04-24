@@ -17,6 +17,7 @@ class ArtificialNeuron{
     vector<double> weight;
     //阈值
     double threshold;
+protected:
     double scalarProduct(const vector<double> &x){
         if(x.size()!=weight.size())
         {
@@ -28,6 +29,7 @@ class ArtificialNeuron{
         }
         return result;
     }
+
     double activationFunction(double x){
         return 1 / (1 + pow(e,x));
     }
@@ -45,7 +47,6 @@ public:
         threshold = Threshold;
     }
     double output(const vector<double> &x){
-        double z = scalarProduct(x) + threshold;
         return activationFunction(scalarProduct(x) + threshold);
     }
 };
