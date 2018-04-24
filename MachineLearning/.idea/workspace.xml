@@ -11,9 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fb5d718-7d70-4a95-8205-1b0adb626e4d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/neuralNetwork.h" beforeDir="false" afterPath="$PROJECT_DIR$/neuralNetwork.h" afterDir="false" />
-    </list>
+    <list default="true" id="8fb5d718-7d70-4a95-8205-1b0adb626e4d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,9 +62,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="454" />
-    <option name="y" value="29" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="261" />
+    <option name="y" value="30" />
     <option name="width" value="1438" />
     <option name="height" value="935" />
   </component>
@@ -128,16 +126,15 @@
       <option name="presentableId" value="Default" />
       <updated>1524051888231</updated>
       <workItem from="1524051891253" duration="17000" />
-      <workItem from="1524051961903" duration="5161000" />
+      <workItem from="1524051961903" duration="5773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5178000" />
+    <option name="totallyTimeSpent" value="5790000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="454" y="29" width="1438" height="935" extended-state="1" />
-    <editor active="true" />
+    <frame x="261" y="30" width="1438" height="935" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496523" />
       <window_info anchor="bottom" id="TODO" order="6" />
