@@ -127,7 +127,7 @@ public:
                 if(temp[1] == 'a'){
                     unsigned beginSub=11;
                     unsigned endSub=12;
-                    while((temp[endSub] >= 'a'&&temp[endSub] <='z') || (temp[endSub] >='A' && temp[endSub] <='Z') )
+                    while(temp[endSub] != ' ' )
                         ++endSub;
                     string attributionName=temp.substr(beginSub,endSub-beginSub);
                     attributionsName.push_back(attributionName);
@@ -135,12 +135,10 @@ public:
                     set<string> attr;
                     while(true) {
                         //截取一个单词
-                        while (!((temp[endSub] >= 'a' && temp[endSub] <= 'z') ||
-                                 (temp[endSub] >= 'A' && temp[endSub] <= 'Z')))
+                        while (!(temp[endSub] != ' ' && temp[endSub] != ',' && temp[endSub] != '{'))
                             ++endSub;
                         beginSub = endSub;
-                        while ((temp[endSub] >= 'a' && temp[endSub] <= 'z') ||
-                               (temp[endSub] >= 'A' && temp[endSub] <= 'Z'))
+                        while (temp[endSub] != ' ' && temp[endSub] != ',' && temp[endSub] != '{' && temp[endSub] != '}')
                             ++endSub;
                         attr.insert(temp.substr(beginSub,endSub -beginSub));
 

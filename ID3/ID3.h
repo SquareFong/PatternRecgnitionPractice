@@ -44,6 +44,8 @@ public:
     void buildID3Tree(const vector<int> &sub, bool *usedAttribution, node * branch);
 
     void showTree(node * id3tree= nullptr, const string&control="");
+
+    
 };
 
 

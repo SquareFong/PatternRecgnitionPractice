@@ -6,13 +6,13 @@ int main() {
     clock_t t1(clock());
 
     Instances i;
-    DataLoader::ArffReader("/opt/weka-3-8-2/data/weather.nominal.arff",i);
+    DataLoader::ArffReader("/home/squarefong/Documents/PatternRecgnitionPractice/car-evaluation.arff",i);
     ID3 id3(i);
 //    vector<int> s;
 //    for(int j=0; j<i.size(); ++j){
 //        s.push_back(j);
 //    }
-    id3.setDec(4);
+    id3.setDec(6);
 //
 //    double a=id3.entropy_Dec(s);
 //    cout << id3.entropy_Dec(s) << endl;

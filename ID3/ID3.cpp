@@ -118,7 +118,7 @@ void ID3::buildID3Tree(const vector<int> &sub, bool *usedAttribution, node * bra
             buildID3Tree(nextSub, usedAttribution, (*treeIt).second);
         }
     }
-    //usedAttribution[maxEntropySub] = false;
+    usedAttribution[maxEntropySub] = false;
 }
 
 void ID3::showTree(ID3::node *id3tree, const string &control) {
