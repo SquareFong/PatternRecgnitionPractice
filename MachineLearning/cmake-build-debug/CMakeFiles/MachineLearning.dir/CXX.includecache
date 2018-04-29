@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/squarefong/Documents/PatternRecgnitionPractice/MachineLearning/artificialNeuron.h
+vector
+-
+cstdlib
+-
+cmath
+-
+
+/home/squarefong/Documents/PatternRecgnitionPractice/MachineLearning/main.cpp
+iostream
+-
+dirent.h
+-
+algorithm
+-
+fstream
+-
+random
+-
+artificialNeuron.h
+/home/squarefong/Documents/PatternRecgnitionPractice/MachineLearning/artificialNeuron.h
+neuralNetwork.h
+/home/squarefong/Documents/PatternRecgnitionPractice/MachineLearning/neuralNetwork.h
+
+/home/squarefong/Documents/PatternRecgnitionPractice/MachineLearning/neuralNetwork.h
+artificialNeuron.h
+/home/squarefong/Documents/PatternRecgnitionPractice/MachineLearning/artificialNeuron.h
+
