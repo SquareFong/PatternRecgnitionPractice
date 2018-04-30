@@ -10,6 +10,7 @@
 #include <cmath>
 using namespace std;
 class ID3 {
+protected:
     Instances dataSets;
     vector<string> ID3tree;
     int decAttribution;
@@ -39,13 +40,31 @@ public:
 
     double entropy(const vector<int> &sub, const int &attributionSub);
 
+    //Info为划分行为带来的信息
+    double info(const vector<int> &sub, const int &attributionSub){
+        double ent=0.0;
+        set<string> decision=dataSets.getAttributions(attributionSub);
+        map<string,vector<int>> possibilities;
+        for(auto i=decision.begin(); i != decision.end(); ++i){
+            possibilities.insert(make_pair((*i),vector<int>()));
+        }
+        for(int i=0; i<sub.size(); ++i){
+            const string &value=dataSets[sub[i]][attributionSub];
+            possibilities[value].push_back(sub[i]);
+        }
+        for(auto i=possibilities.begin(); i != possibilities.end(); ++i){
+            double temp=(double)((*i).second.size())/(double)sub.size();
+            ent += temp * log2((double) (*i).second.size()) / (double) sub.size();
+        }
+    }
+
     void startBuildTree();
 
     void buildID3Tree(const vector<int> &sub, bool *usedAttribution, node * branch);
 
     void showTree(node * id3tree= nullptr, const string&control="");
 
-    
+
 };
 
 

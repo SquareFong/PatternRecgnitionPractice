@@ -88,10 +88,16 @@
 		<Unit filename="/home/squarefong/Documents/PatternRecgnitionPractice/ID3/ID3.h">
 			<Option target="ID3"/>
 		</Unit>
+		<Unit filename="/home/squarefong/Documents/PatternRecgnitionPractice/ID3/c4.5.h">
+			<Option target="ID3"/>
+		</Unit>
 		<Unit filename="/home/squarefong/Documents/PatternRecgnitionPractice/ID3/loadData.h">
 			<Option target="ID3"/>
 		</Unit>
 		<Unit filename="/home/squarefong/Documents/PatternRecgnitionPractice/ID3/main.cpp">
+			<Option target="ID3"/>
+		</Unit>
+		<Unit filename="/home/squarefong/Documents/PatternRecgnitionPractice/ID3/test.h">
 			<Option target="ID3"/>
 		</Unit>
 		<Unit filename="/home/squarefong/Documents/PatternRecgnitionPractice/ID3/CMakeLists.txt">

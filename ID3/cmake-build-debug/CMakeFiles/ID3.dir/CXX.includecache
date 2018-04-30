@@ -18,6 +18,10 @@ map
 cmath
 -
 
+/home/squarefong/Documents/PatternRecgnitionPractice/ID3/c4.5.h
+ID3.h
+/home/squarefong/Documents/PatternRecgnitionPractice/ID3/ID3.h
+
 /home/squarefong/Documents/PatternRecgnitionPractice/ID3/loadData.h
 vector
 -
@@ -33,6 +37,10 @@ iostream
 -
 
 /home/squarefong/Documents/PatternRecgnitionPractice/ID3/main.cpp
+test.h
+/home/squarefong/Documents/PatternRecgnitionPractice/ID3/test.h
+
+/home/squarefong/Documents/PatternRecgnitionPractice/ID3/test.h
 iostream
 -
 ctime
@@ -41,4 +49,6 @@ loadData.h
 /home/squarefong/Documents/PatternRecgnitionPractice/ID3/loadData.h
 ID3.h
 /home/squarefong/Documents/PatternRecgnitionPractice/ID3/ID3.h
+c4.5.h
+/home/squarefong/Documents/PatternRecgnitionPractice/ID3/c4.5.h
 

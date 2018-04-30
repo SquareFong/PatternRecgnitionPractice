@@ -3,4 +3,4 @@ project(ID3)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(ID3 main.cpp ID3.cpp ID3.h loadData.h)
+add_executable(ID3 main.cpp ID3.cpp ID3.h loadData.h c4.5.h test.h)
