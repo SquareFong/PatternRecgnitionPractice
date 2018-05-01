@@ -40,31 +40,48 @@ public:
 
     double entropy(const vector<int> &sub, const int &attributionSub);
 
-    //Info为划分行为带来的信息
-    double info(const vector<int> &sub, const int &attributionSub){
-        double ent=0.0;
-        set<string> decision=dataSets.getAttributions(attributionSub);
-        map<string,vector<int>> possibilities;
-        for(auto i=decision.begin(); i != decision.end(); ++i){
-            possibilities.insert(make_pair((*i),vector<int>()));
-        }
-        for(int i=0; i<sub.size(); ++i){
-            const string &value=dataSets[sub[i]][attributionSub];
-            possibilities[value].push_back(sub[i]);
-        }
-        for(auto i=possibilities.begin(); i != possibilities.end(); ++i){
-            double temp=(double)((*i).second.size())/(double)sub.size();
-            ent += temp * log2((double) (*i).second.size()) / (double) sub.size();
-        }
-    }
-
     void startBuildTree();
 
     void buildID3Tree(const vector<int> &sub, bool *usedAttribution, node * branch);
 
     void showTree(node * id3tree= nullptr, const string&control="");
 
+    string judge(const Instance &rhs){
+        node *current=tr;
+        while (true) {
+            string attrName = current->attribution;
+            int attrSub = dataSets.getAttributionsSub(attrName);
+            auto f = current->kids.find(rhs[attrSub]);
+            if(f != current->kids.end()){
+                current = (*f).second;
+                if(current->kids.size() == 0)
+                    return current->attribution;
+            } else{
+                return "";
+            }
+        }
+    }
 
+    void test(const Instances & rhs){
+        double correctCounter=0.0;
+        double errorCounter=0.0;
+        double nullCounter=0.0;
+        for(int i=0; i<rhs.size(); ++i) {
+            auto tempIns = rhs[i];
+            string result = judge(rhs[i]);
+            if (result == "")
+                ++nullCounter;
+            else if (result == rhs[i][decAttribution]) {
+                ++correctCounter;
+            } else
+                ++errorCounter;
+        }
+        cout << "测试实例总共" << rhs.size() << "个测试样本，其中：\n";
+        cout << "正确分类的有：" << correctCounter << "个测试样本，正确率：" << correctCounter/rhs.size() << endl;
+        cout << "错误分类的有：" << errorCounter << "个测试样本，错误率：" << errorCounter/rhs.size() << endl;
+        cout << "拒绝分类的有：" << nullCounter << "个测试样本，拒绝率：" << nullCounter/rhs.size() << endl;
+
+    }
 };
 
 
