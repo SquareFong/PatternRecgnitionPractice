@@ -22,6 +22,26 @@ public:
         tr = new node();
         buildC45Tree(s,used,tr);
     }
+
+    //Info为划分行为带来的信息
+    double info(const vector<int> &sub, const int &attributionSub){
+        double ent=0.0;
+        set<string> decision=dataSets.getAttributions(attributionSub);
+        map<string,vector<int>> possibilities;
+        for(auto i=decision.begin(); i != decision.end(); ++i){
+            possibilities.insert(make_pair((*i),vector<int>()));
+        }
+        for(int i=0; i<sub.size(); ++i){
+            const string &value=dataSets[sub[i]][attributionSub];
+            possibilities[value].push_back(sub[i]);
+        }
+        for(auto i=possibilities.begin(); i != possibilities.end(); ++i){
+            double temp=(double)((*i).second.size())/(double)sub.size();
+            ent -= temp * log2(temp);
+        }
+        return ent;
+    }
+
     void buildC45Tree(const vector<int> &sub, bool *usedAttribution, node * branch){
         //决策属性的熵
         double decEntropy=this->entropy_Dec(sub);
@@ -34,9 +54,27 @@ public:
         for(int i = 0; i < dataSets.attributionSize(); ++i){
             if(i != decAttribution && !usedAttribution[i]){
                 string attributionName=dataSets.getAttributionName(i);
-                double ent=entropy(sub,i);
-                double inf=info(sub,i);
-                ents.insert(make_pair(attributionName, (decEntropy-ent)/inf));
+                map<string,int> check;
+                for(int j(0); j < dataSets.size(); ++j){
+                    if(check.find(dataSets[j][i]) != check.end()){
+                        ++check[dataSets[j][i]];
+                    } else {
+                        check.insert(make_pair(dataSets[j][i],1));
+                    }
+                }
+                int m = 3;
+                for(auto &f:check){
+                    if(f.second > m){
+                        m=f.second;
+                    }
+                }
+                if(m <= 3){
+                    ents.insert(make_pair(attributionName, 0));
+                } else
+                {   double ent = entropy(sub, i);
+                    double inf = info(sub, i);
+                    ents.insert(make_pair(attributionName, (decEntropy - ent) / inf));
+                }
             }
         }
         if(ents.size() == 0)
