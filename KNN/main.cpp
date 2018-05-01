@@ -1,8 +1,8 @@
 #include <iostream>
 #include "HandwritingRecognition.h"
 
-string trainingDirectory("/home/squarefong/Documents/PatternRecgnitionPractice/KNN/trainingDigits");
-string testDirectory("/home/squarefong/Documents/PatternRecgnitionPractice/KNN/testDigits");
+string trainingDirectory("../trainingDigits");
+string testDirectory("../testDigits");
 
 int main() {
     vector<string> trainingFiles = getFiles(trainingDirectory);

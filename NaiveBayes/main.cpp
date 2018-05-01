@@ -27,7 +27,7 @@ void test(NaiveBayes & nb, Instances &ins){
 
 int main() {
     Instances i;
-    DataLoader::ArffReader("/opt/weka-3-8-2/data/weather.nominal.arff",i);
+    DataLoader::ArffReader("../../testDatas/weather.nominal_with_interference.arff",i);
     //cout << i;
 
     NaiveBayes nb(i);
