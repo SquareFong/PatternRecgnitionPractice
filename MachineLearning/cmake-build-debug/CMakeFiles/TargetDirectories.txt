@@ -1,3 +1,0 @@
-/home/squarefong/Documents/PatternRecgnitionPractice/MachineLearning/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/squarefong/Documents/PatternRecgnitionPractice/MachineLearning/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/squarefong/Documents/PatternRecgnitionPractice/MachineLearning/cmake-build-debug/CMakeFiles/MachineLearning.dir
