@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/squarefong/Documents/PatternRecgnitionPractice/ID3/ID3.cpp" "/home/squarefong/Documents/PatternRecgnitionPractice/ID3/cmake-build-debug/CMakeFiles/ID3.dir/ID3.cpp.o"
-  "/home/squarefong/Documents/PatternRecgnitionPractice/ID3/main.cpp" "/home/squarefong/Documents/PatternRecgnitionPractice/ID3/cmake-build-debug/CMakeFiles/ID3.dir/main.cpp.o"
+  "/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/ID3.cpp" "/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/cmake-build-debug/CMakeFiles/ID3.dir/ID3.cpp.o"
+  "/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/main.cpp" "/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/cmake-build-debug/CMakeFiles/ID3.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

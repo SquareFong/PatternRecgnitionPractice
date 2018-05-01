@@ -11,8 +11,9 @@
 #include <fstream>
 #include <cstring>
 #include <iostream>
+#include <random>
 using namespace std;
-
+class DataLoader;
 class Instance{
     vector<string> attributionsValue; //一个实例的所有属性
     vector<int> numericSub; //属性为数值的下标们
@@ -30,9 +31,13 @@ public:
         return attributionsValue[rhs];
     }
 
+    unsigned long size() const{
+        return attributionsValue.size();
+    }
 };
 
 class Instances{
+    friend DataLoader;
     vector<Instance> dataSets;
     //属性值集合
     vector<set<string>> attributions;
@@ -77,11 +82,11 @@ public:
         return "";
     }
 
-    unsigned long attributionSize(){
+    unsigned long attributionSize() const{
         return attributionsName.size();
     }
 
-    unsigned long size(){
+    unsigned long size() const{
         return dataSets.size();
     }
 
@@ -165,6 +170,31 @@ public:
                 instances.push_back(tempInstance);
             }
         }
+    }
+    static bool spliteInstace(const Instances &instances,  Instances &trainSets, Instances &testSets, double percentage){
+        if(percentage<0 || percentage > 1){
+            return false;
+
+        }
+        int test=instances.size()*percentage;
+        bool L[instances.size()]={false};
+        for(int i(0); i<test; ++i){
+            int r=random()%instances.size();
+            if(L[r]){
+                --i;
+            } else{
+                L[r]=true;
+            }
+        }
+        trainSets=Instances(instances.attributions,instances.attributionsName);
+        testSets=Instances(instances.attributions,instances.attributionsName);
+        for(int i=0; i<instances.size(); ++i){
+            if(L[i])
+                trainSets.push_back(instances[i]);
+            else
+                testSets.push_back(instances[i]);
+        }
+        return true;
     }
 };
 

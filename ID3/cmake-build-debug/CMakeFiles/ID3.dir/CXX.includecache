@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/squarefong/Documents/PatternRecgnitionPractice/ID3/ID3.cpp
+/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/ID3.cpp
 ID3.h
-/home/squarefong/Documents/PatternRecgnitionPractice/ID3/ID3.h
+/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/ID3.h
 
-/home/squarefong/Documents/PatternRecgnitionPractice/ID3/ID3.h
+/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/ID3.h
 loadData.h
-/home/squarefong/Documents/PatternRecgnitionPractice/ID3/loadData.h
+/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/loadData.h
 map
 -
 cmath
 -
 
-/home/squarefong/Documents/PatternRecgnitionPractice/ID3/c4.5.h
+/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/c4.5.h
 ID3.h
-/home/squarefong/Documents/PatternRecgnitionPractice/ID3/ID3.h
+/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/ID3.h
 
-/home/squarefong/Documents/PatternRecgnitionPractice/ID3/loadData.h
+/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/loadData.h
 vector
 -
 string
@@ -35,20 +35,22 @@ cstring
 -
 iostream
 -
+random
+-
 
-/home/squarefong/Documents/PatternRecgnitionPractice/ID3/main.cpp
+/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/main.cpp
 test.h
-/home/squarefong/Documents/PatternRecgnitionPractice/ID3/test.h
+/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/test.h
 
-/home/squarefong/Documents/PatternRecgnitionPractice/ID3/test.h
+/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/test.h
 iostream
 -
 ctime
 -
 loadData.h
-/home/squarefong/Documents/PatternRecgnitionPractice/ID3/loadData.h
+/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/loadData.h
 ID3.h
-/home/squarefong/Documents/PatternRecgnitionPractice/ID3/ID3.h
+/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/ID3.h
 c4.5.h
-/home/squarefong/Documents/PatternRecgnitionPractice/ID3/c4.5.h
+/home/squarefong/Documents/coding/PatternRecgnitionPractice/ID3/c4.5.h
 
