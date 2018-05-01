@@ -7,7 +7,11 @@ ID3和朴素贝叶斯用的兼容weka的arff的实现，但是仅支持非数值
 KNN是一个简单的示例，以识别手写字母为例。
 
 查资料的过程中发现几篇简单易懂的博文：
+
 [ID3决策树](http://www.cnblogs.com/zhangchaoyang/articles/2196631.html)
+
 [朴素贝叶斯分类](http://www.cnblogs.com/zhangchaoyang/articles/2586402.html)
+
 [K近邻算法](https://wizardforcel.gitbooks.io/dm-algo-top10/content/knn.html)
+
 [朴素贝叶斯分类器](https://wizardforcel.gitbooks.io/dm-algo-top10/content/naive-bayes.html)
